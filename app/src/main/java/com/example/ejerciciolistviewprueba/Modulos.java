@@ -39,11 +39,11 @@ public class Modulos extends AppCompatActivity {
 
         //textoDeCiclo.setText(b.getString("CICLO"));
 
-        switch ( b.getString("CICLO")){
+        switch ( b.getString("CICLO")){//Recibimos el ciclo seleccionado y segun el ciclo configuramos la activity de una forma u otra
             case "DAM":
-                textoDeCiclo.setText("Estás en el ciclo de DAM");
-                imagenCiclo.setImageResource(R.drawable.img_2);
-                window.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#c1ff65")));
+                textoDeCiclo.setText("Estás en el ciclo de DAM");//Texto que se muestra
+                imagenCiclo.setImageResource(R.drawable.img_2);//Imagen que se muestra
+                window.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#c1ff65")));//Color de fondo del activity
                 break;
             case "DAW":
                 textoDeCiclo.setText("Estás en el ciclo de DAW");
@@ -59,6 +59,7 @@ public class Modulos extends AppCompatActivity {
 
     }
 
+    //Boton de volver a la main
     public void volver(View view){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);

@@ -1,10 +1,10 @@
 package com.example.ejerciciolistviewprueba;
 
 public class Persona {
-    private int imagen;
-    private String nombre;
-    private String apellidos;
-    private String ciclo;
+    private int imagen;//Imagen de la persona
+    private String nombre;//NOmbre de la persona
+    private String apellidos;//Apellidos de la persona
+    private String ciclo;//Ciclo de la persona
 
     public Persona() {
     }
